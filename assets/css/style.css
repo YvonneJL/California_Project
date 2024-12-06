@@ -268,7 +268,6 @@ nav {
 
 .poppy-bear {
     background-color: var(--white);
-    overflow: hidden;
 }
 
 .poppy-bear article {
@@ -284,7 +283,7 @@ nav {
     position: absolute;
     left: 15%;
     bottom: -8vh;
-    z-index: 3;
+    z-index: 2;
 }
 
 .poppy-bear img:nth-of-type(2) {
@@ -292,7 +291,7 @@ nav {
     position: absolute;
     right: 15%;
     bottom: -20vh;
-    z-index: 2;
+    z-index: 1;
 }
 
 .circle-animation {
@@ -316,7 +315,7 @@ nav {
 .leerer-streifen {
     height: 25vh;
     background-color: #f5f5f5;
-    z-index: 2;
+    z-index: -1;
 }
 
 
@@ -387,11 +386,6 @@ footer article:nth-of-type(2) p {
 }
 
 .banderole {
-    /* background-color: var(--white);
-    color: var(--black);
-    font-size: 8.8rem;
-    font-weight: bold; */
-    z-index: 1;
     width: 200%;
     transform: rotate(45deg);
     position: absolute;
