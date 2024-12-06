@@ -8,6 +8,11 @@
     src: url("../font/WorkSans-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: Lora;
+    src: url("../font/Lora-VariableFont_wght.ttf");
+}
+
 :root {
     --black: #000000;
     --white: #FFFFFF;
@@ -263,6 +268,7 @@ nav {
 
 .poppy-bear {
     background-color: var(--white);
+    overflow: hidden;
 }
 
 .poppy-bear article {
@@ -319,6 +325,7 @@ nav {
 footer {
     background-color: var(--black);
     position: relative;
+    overflow: hidden;
 }
 
 footer article {
@@ -380,16 +387,24 @@ footer article:nth-of-type(2) p {
 }
 
 .banderole {
-    background-color: var(--white);
+    /* background-color: var(--white);
     color: var(--black);
     font-size: 8.8rem;
-    font-weight: bold;
+    font-weight: bold; */
     z-index: 1;
     width: 200%;
     transform: rotate(45deg);
     position: absolute;
     top: 55vh;
-    animation: move 3s 1s ease-in-out infinite alternate;
+}
+
+.banderole p {
+       animation: move 3s 1s ease-in-out infinite alternate;
+       background-color: var(--white);
+    color: var(--black);
+    font-size: 8.8rem;
+    font-weight: bold;
+    font-family: Lora;
 }
 
 .banderole span {
@@ -397,7 +412,7 @@ footer article:nth-of-type(2) p {
     -webkit-text-stroke: 1px var(--black);
 }
 
-/* @keyframes move {
+@keyframes move {
     0% {
         transform: translateX(0);
     }
@@ -405,4 +420,4 @@ footer article:nth-of-type(2) p {
     100% {
         transform: translateX(80px);
     }   
-} */
+}
